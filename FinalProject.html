@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <style>
+        body{
+            background:linear-gradient(#22D694, #9AEACD);
+            padding:30px 30px;
+            max-width:85%;
+            margin:0 auto;
+            border:solid;
+            border-width:5px;
+            border-radius:10px;
+        }
+        h1{
+            margin:0 auto; 
+            display:block;
+            color:#0B2366;
+            text-align:center;
+            padding: 10px 10px;
+            font-size:35px;
+        }
+        h2{
+            margin:0 auto;
+            padding:10px 10px;
+            text-align:center;
+            font-size: 25px;
+        }
+        img{
+            display:block;
+            margin:0 auto;
+            border-radius:15px;
+        }
+        p{
+            margin:0 auto;
+            display:block;
+            text-align:center;
+            line-height:25px;
+            padding:10px 10px;
+            font-style:arial;
+        }
+        .quote{
+            font-size:18px;
+            display:block;
+            text-align:center;
+            color:#DD1C7D;
+            margin-top:20px;
+        }
+        div{
+            display:block;
+            text-align:center;
+            color:#0B2366;
+        }
+        button{
+            display:block;
+            margin:0 auto;
+            padding:15px 20px;
+            margin-top:15px;
+            border-radius:13px;
+            box-shadow:5px 3px 7px rgba(0,0,0.5,1);
+            background-color:#2FA352;
+            font-weight:bold;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color:#92D836;
+            transition:all 200ms ease-in-out;
+        }
+        span{
+            line-height:10px;
+            font-size:16px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <h1>
+        &#x1F3B6 Music for Mental Health &#x1F3B6;
+    </h1>
+    <hr>
+    <h2>
+        The Power of Music
+    </h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/020/291/original/MusicBrain.jpg?1635793774"
+     alt="Music Brain">
+     <p>
+         Research shows the benefits of music therapy for various mental health conditions, including depression, trauma, and schizophrenia (to name a few). Music acts as a medium for processing emotions, trauma, and grief—but music can also be utilized as a regulating or calming agent for anxiety or for dysregulation.
+     </p>
+     <a href="https://www.verywellmind.com/surprising-psychological-benefits-of-music-4126866" target="_blank", class="quote"><span>Read more</span> about music's impact on mental health</a>
+     <br />
+     <br />
+     <p>
+         <div>
+             <em><strong>"Music is powerful. It is the only thing that can speak into your mind, your heart and your soul without your permission." - </strong></em> <span>Emmanuel Jal</span>
+         </div>
+         <hr>
+      <button class="listen-now">
+         Listen to Music Now
+     </button>
+     <p>
+        <span> Page created by Angela Sullivan</span>
+     </p>
+     <script>
+         function listen(){
+             let name = prompt ("What is your name?");
+             let favorite = prompt ("What is your favorite genre of music");
+            
+                 if (favorite === "Rock" || favorite === "Alternative" || favorite === "Rap")
+                 {
+             alert("Right On, " + name + " \u{1F918}");
+         } else {
+             alert("Excellent choice, " + name + " \u{1F44D}");
+         }
+         }
+
+         let listenNow= document.querySelector(".listen-now");
+         listenNow.addEventListener("click", listen);
+     </script>
+  </body>
+</html>
